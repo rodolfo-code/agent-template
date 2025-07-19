@@ -15,7 +15,6 @@ agent_name [SentimentAnalysisAgent]:
 domain_name [sentimentanalysis]: sentiment
 description [A specialized AI micro-agent for specific tasks]: An AI agent specialized in sentiment analysis of text content
 author_name [Your Name]: João Silva
-author_email [your.email@example.com]: joao.silva@empresa.com
 python_version [3.12]:
 use_langsmith [yes]: yes
 use_microsoft_bot_framework [no]: no

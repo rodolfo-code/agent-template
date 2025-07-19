@@ -35,7 +35,6 @@ cat > demo_config.json << EOF
     "domain_name": "demonews",
     "description": "A demo AI agent for news processing",
     "author_name": "Demo User",
-    "author_email": "demo@example.com",
     "python_version": "3.12",
     "use_langsmith": "no",
     "use_microsoft_bot_framework": "no",

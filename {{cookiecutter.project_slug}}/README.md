@@ -173,7 +173,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ## Autor
 
-**{{ cookiecutter.author_name }}** - [{{ cookiecutter.author_email }}](mailto:{{ cookiecutter.author_email }})
+**{{ cookiecutter.author_name }}**
 
 ## Changelog
 
