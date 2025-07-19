@@ -17,7 +17,6 @@ description [A specialized AI micro-agent for specific tasks]: An AI agent speci
 author_name [Your Name]: João Silva
 python_version [3.12]:
 use_langsmith [yes]: yes
-use_microsoft_bot_framework [no]: no
 openai_model [gpt-4o-mini]: gpt-4o-mini
 ```
 

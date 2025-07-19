@@ -37,7 +37,6 @@ cat > demo_config.json << EOF
     "author_name": "Demo User",
     "python_version": "3.12",
     "use_langsmith": "no",
-    "use_microsoft_bot_framework": "no",
     "openai_model": "gpt-4o-mini"
 }
 EOF
