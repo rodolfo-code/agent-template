@@ -29,10 +29,6 @@ dependencies = [
     {% endif -%}
     "pydantic>=2.5.0",
     "python-dotenv>=1.0.0",
-    {% if cookiecutter.use_microsoft_bot_framework == "yes" -%}
-    "botbuilder-core>=4.15.0",
-    "botbuilder-schema>=4.15.0",
-    {% endif -%}
     "aiohttp>=3.9.0",
     "structlog>=23.2.0",
     "python-multipart>=0.0.6",
