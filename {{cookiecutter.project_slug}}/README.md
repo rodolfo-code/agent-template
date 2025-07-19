@@ -28,8 +28,6 @@ Este projeto implementa Clean Architecture com as seguintes camadas:
   {% if cookiecutter.use_langsmith == "yes" -%}
 - **LangSmith** - Monitoramento e debugging de LLM
   {% endif -%}
-- **Microsoft Bot Framework** - Integração com bots
-  {% endif -%}
 
 ## Pré-requisitos
 
