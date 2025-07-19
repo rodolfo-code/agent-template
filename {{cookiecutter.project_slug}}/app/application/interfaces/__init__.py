@@ -1,0 +1,1 @@
+"""Interfaces module for {{ cookiecutter.project_name }}.""" 

@@ -1,0 +1,1 @@
+"""Application layer for {{ cookiecutter.project_name }}.""" 

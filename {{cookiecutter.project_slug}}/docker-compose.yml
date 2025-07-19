@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  {{ cookiecutter.project_slug }}:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      {% if cookiecutter.use_langsmith == "yes" -%}
+      - LANGCHAIN_TRACING_V2=true
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY}
+      - LANGCHAIN_PROJECT={{ cookiecutter.project_slug }}
+      {% endif -%}
+      - ENVIRONMENT=development
+      - LOG_LEVEL=INFO
+    volumes:
+      - .:/app
+      - /app/.venv  # Prevent mounting .venv from host
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Uncomment if you need Redis for caching or sessions
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   restart: unless-stopped
+  #   healthcheck:
+  #     test: ["CMD", "redis-cli", "ping"]
+  #     interval: 30s
+  #     timeout: 10s
+  #     retries: 3
+
+networks:
+  default:
+    name: {{ cookiecutter.project_slug }}-network 

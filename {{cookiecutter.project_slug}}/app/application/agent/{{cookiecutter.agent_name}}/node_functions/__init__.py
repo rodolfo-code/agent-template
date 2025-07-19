@@ -1,0 +1,1 @@
+"""Node functions module for {{ cookiecutter.agent_name }}.""" 
