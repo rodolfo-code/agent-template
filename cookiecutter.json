@@ -1,7 +1,7 @@
 {
     "project_name": "My AI Agent",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
-    "agent_name": "{{ cookiecutter.project_name.replace(' ', '').replace('-', '').replace('_', '') }}Agent",
+    "agent_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "domain_name": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '').replace('_', '') }}",
     "first_node_name": "your_node_name",
     "description": "A specialized AI micro-agent for specific tasks",
