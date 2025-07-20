@@ -1,14 +1,10 @@
-"""
-{{ cookiecutter.project_name }}
-"""
-
 from fastapi import FastAPI
+from app.presentation.{{cookiecutter.agent_name}}_router import router as {{cookiecutter.agent_name}}_router
+
 
 app = FastAPI(title="{{ cookiecutter.project_name }}")
 
-# TODO: Importe e configure seu router aqui
-# from app.presentation.domain_router import router
-# app.include_router(router, prefix="/domain")
+app.include_router({{cookiecutter.agent_name}}_router, prefix="/api")
 
 
 @app.get("/health")
