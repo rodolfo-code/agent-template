@@ -1,7 +1,3 @@
-"""
-FastAPI router for {{ cookiecutter.domain_name }}.
-"""
-
 from fastapi import APIRouter
 
 router = APIRouter()
