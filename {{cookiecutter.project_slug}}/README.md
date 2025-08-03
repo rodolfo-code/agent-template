@@ -99,7 +99,7 @@ docker run -p 8000:8000 --env-file .env {{ cookiecutter.project_slug }}
 {{ cookiecutter.project_slug }}/
 ├── app/
 │   ├── presentation/           # Camada de apresentação (FastAPI)
-│   │   └── {{ cookiecutter.domain_name }}_router.py
+│   │   └──
 │   ├── application/           # Camada de aplicação
 │   │   ├── agent/
 │   │   │   └── {{ cookiecutter.agent_name }}/
@@ -122,7 +122,6 @@ docker run -p 8000:8000 --env-file .env {{ cookiecutter.project_slug }}
 ## API Endpoints
 
 - `GET /health` - Health check da aplicação
-- `POST /{{ cookiecutter.domain_name }}/process` - Endpoint principal do agente
 
 Para documentação completa da API, acesse: http://localhost:8000/docs
 
@@ -152,7 +151,7 @@ uv run mypy .
 
 Este agente foi desenvolvido para integração com Kestra. Para usar com Kestra:
 
-1. Configure o endpoint HTTP task apontando para `http://localhost:8000/{{ cookiecutter.domain_name }}/process`
+1. Configure o endpoint HTTP task apontando para `http://localhost:8000
 2. Configure as variáveis de ambiente necessárias no Kestra
 3. Use o payload apropriado conforme a documentação da API
 

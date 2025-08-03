@@ -1,11 +1,12 @@
-import structlog
+import logging
+from app.application.interfaces.illm_service import ILLMService
 from langchain_core.language_models import BaseLanguageModel
 from langchain_openai import ChatOpenAI
 
-logger = structlog.get_logger()
+logger = logging.getLogger(__name__)
 from app.infrastructure.config.config import settings
 
-class OpenAIService:
+class OpenAIService(ILLMService):
     """Service for OpenAI language models."""
     def __init__(self):
         self.client = ChatOpenAI(

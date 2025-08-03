@@ -12,7 +12,6 @@ cookiecutter .
 project_name [My AI Agent]: Sentiment Analysis Agent
 project_slug [sentiment-analysis-agent]:
 agent_name [sentiment_analysis_agent]:
-domain_name [sentimentanalysis]: sentiment
 description [A specialized AI micro-agent for specific tasks]: An AI agent specialized in sentiment analysis of text content
 author_name [Your Name]: João Silva
 python_version [3.12]:

@@ -32,7 +32,6 @@ cat > demo_config.json << EOF
     "project_name": "Demo News Agent",
     "project_slug": "demo-news-agent",
     "agent_name": "demo_news_agent",
-    "domain_name": "demonews",
     "description": "A demo AI agent for news processing",
     "author_name": "Demo User",
     "python_version": "3.12",
